@@ -11,4 +11,4 @@ def fizzbuzz(n):
 		else:
 			print i
 
-fizzbuzz(100)
+fizzbuzz(50)
