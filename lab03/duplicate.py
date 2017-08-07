@@ -18,9 +18,16 @@ sentence = input()
 
 # Define this function to return the expected output
 # Do not print it from this function
-def singlify(str):
-    # TODO
-    pass
+def singlify(my_str):
+    words = my_str.split()
+    seen = set()
+    result = []
+    for word in words:
+    	if word.lower() not in seen:
+    		result.append(word)
+    		seen.add(word.lower())
+    
+    return ' '.join(sorted(result, key=lambda x: x.lower()))
 
 print(singlify(sentence))
 
