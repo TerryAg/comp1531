@@ -12,8 +12,9 @@ user_list = input("Put a few comma separated characters\n").split(',')
 
 
 def shuffle(li):
-    # TODO
-    pass
+    new_L = li[:]
+    random.shuffle(new_L)
+    return ','.join(new_L)
 
 print(shuffle(user_list))
 
