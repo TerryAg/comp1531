@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+   <head>
+   <title>Hello page</title>
+   </head>
+   <body>
+        {% if results %}
+       {% for step in results %}
+      {{step}} <br />
+      {% endfor %}
+      {%else%}
+      The list is already sorted!
+      <!-- Put the sorted list here... -->
+      {% endif %}
+   </body>
+   </html>
